@@ -12,7 +12,7 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *curr, *prev, *key;
 
-	if (list == NULL || (*list)->next == NULL)
+	if (list == NULL)
 		exit(98);
 
 	key = (*list);
