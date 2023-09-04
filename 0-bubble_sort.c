@@ -13,6 +13,12 @@ void bubble_sort(int *array, size_t size)
 {
 	size_t i, j;
 	int swapped = 0;
+
+	if (array == NULL || size  == 0)
+	{
+		exit(98);
+	}
+
 	for (i = 0; i < size - 1; i++)
 	{
 		swapped = 0;
@@ -26,7 +32,7 @@ void bubble_sort(int *array, size_t size)
 				print_array(array, size);
 			}
 		}
-  
+
 		/* If no two elements were swapped by inner loop, */
 		/* then break */
 		if (swapped == 0)
@@ -43,7 +49,7 @@ void bubble_sort(int *array, size_t size)
  */
 void swap(int *a, int *b)
 {
-    int temp = *a;
-    *a = *b;
-    *b = temp;
+	int temp = *a;
+	*a = *b;
+	*b = temp;
 }
