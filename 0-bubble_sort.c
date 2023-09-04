@@ -27,8 +27,8 @@ void bubble_sort(int *array, size_t size)
 			}
 		}
   
-		// If no two elements were swapped by inner loop,
-		// then break
+		/* If no two elements were swapped by inner loop, */
+		/* then break */
 		if (swapped == 0)
 			break;
 	}
