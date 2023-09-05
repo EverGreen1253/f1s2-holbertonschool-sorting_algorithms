@@ -23,6 +23,8 @@ void print_list(const listint_t *list);
 
 void swap(int *a, int *b);
 listint_t *create_listint(const int *array, size_t size);
+void solve(int *array, int start, int stop, size_t size);
+int partition(int arr[], int low, int high, size_t size);
 
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
