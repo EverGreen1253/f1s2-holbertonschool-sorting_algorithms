@@ -13,6 +13,9 @@ void selection_sort(int *array, size_t size)
 {
 	size_t i, j, min_idx;
 
+	if (array == NULL || size  == 0)
+		exit(98);
+
 	// One by one move boundary of unsorted subarray
 	for (i = 0; i < size - 1; i++)
 	{
