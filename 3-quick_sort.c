@@ -57,9 +57,9 @@ void solve(int *array, int start, int stop, size_t size)
 int partition(int *array, int start, int stop, size_t size)
 {
 	int pivot = array[stop];
-	int i = (start - 1);
+	int i = (start - 1), j = start;
 
-	for (int j = start; j <= stop - 1; j++)
+	while(j <= stop - 1)
 	{
 		if (array[j] < pivot)
 		{
@@ -71,6 +71,7 @@ int partition(int *array, int start, int stop, size_t size)
 				print_array(array, size);
 			}
 		}
+		j++;
 	}
 	swap(&array[i + 1], &array[stop]);
 
