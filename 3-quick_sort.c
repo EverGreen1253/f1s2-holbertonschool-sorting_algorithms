@@ -59,7 +59,7 @@ int partition(int *array, int start, int stop, size_t size)
 	int pivot = array[stop];
 	int i = (start - 1), j = start;
 
-	while(j <= stop - 1)
+	while (j <= stop - 1)
 	{
 		if (array[j] < pivot)
 		{
